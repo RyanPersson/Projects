@@ -1,0 +1,14 @@
+Problem:
+Find the sum of all even Fibinocci number under 4 million.
+
+Pseudocode:
+
+fibinocci loop while n<4 million
+
+	if even
+
+		add to sum
+
+
+output sum
+	

@@ -1,0 +1,19 @@
+Problem:
+
+Find the sum of all numbers under 1000 which are multiples of 3  and 5.
+
+Series 5x.
+
+runs untill 5x>=1000
+
+series 3 times n, 
+
+runs untill 3n>=1000
+
+Skips steps where n/5.
+
+sum of all 3n and 5x
+
+output sum
+
+ 
