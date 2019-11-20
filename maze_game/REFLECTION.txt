@@ -1,0 +1,40 @@
+Author: Ryan Persson
+Date Created: 3/19/2019
+
+
+I assumed constructing the mazelevel objects using fstream would be the hardest part, but this ended up being relatively easy.
+The hardest part of writing this program was figuring out how & where to keep the mazeperson objects and related functionality.
+ I ended up storing them as a vector in each mazelevel and storing a location index in mazeperson,
+but ALSO storing their location as bools in the openspace objects.
+
+
+
+
+My test plan for this program was first to get the mazelevel constructor working.
+I tested this by not including the rest of the classes until I was consistently able to create the mazelevels and print them.
+Once that was complete, I tested functionality by creating the classes piece by pice, adding them to the mazelevel and printing it,
+while fixing errors along the way.
+I then implemented movement and all other logic using an abreviated version of maze.txt to get to the end faster. I tested all possible I/O and 
+game scenerios to make sure the program was watertight.
+
+I also allowed wasd as input in addition to WASD because this cut the required keystroles to playthough by 1/3rd
+
+
+The biggest obstacle was figuring out how to structure mazeperson functionality in mazelevel. Beyond that, the obstacles mainly consisted of fixing 
+various bugs. One bug that took me a while was TAs spawning on wall objects and walking off the map thus causing a segfault.
+Another was infinite loops caused by logic errors in run_maze.
+
+
+The most helpful resources for this project was my own course notes and previous labs/projects, as well as stack-overflow.
+
+The lecture code was also useful.
+
+
+This program fully implements the assignment, all memory is cleared according to valgrind, all required functionality is included. It includes proper headers 
+and comments for every function and every file.
+
+
+
+To run, compile using "make", then run using "./escape 'mazename'.txt" where mazename is whatever file you are using as a maze.
+
+use wasd or WASD to move, U to go up when on a ladder, and P to use a programming skill.
